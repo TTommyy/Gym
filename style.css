@@ -572,6 +572,7 @@ button {
    padding-left: 3%;
    outline: none;
    margin-top: 4.5%;
+   padding-right: 2.5%;
 }
 
 .i-name::placeholder {
@@ -587,6 +588,7 @@ button {
    padding-left: 3%;
    outline: none;
    margin-top: 3.5%;
+   padding-right: 2.5%;
 }
 
 .i-email::placeholder {
@@ -596,17 +598,20 @@ button {
 .i-msg {
    width: 600px;
    height: 120px;
-   font-size: 13px;
+   font-size: 14.3px;
    font-weight: 400;
    border: none;
    padding-left: 3%;
    outline: none;
    margin-top: 3.5%;
+   resize: none;
+   font-family: "Nunito";
+   padding-top: 1.2%;
+   padding-right: 2.5%;
 }
 
 .i-msg::placeholder {
    color: #000;
-   margin-bottom: 400%;
 }
 
 .i-button {

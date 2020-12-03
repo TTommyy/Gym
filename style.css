@@ -37,6 +37,7 @@ button {
 
 .logo {
    margin-left: 180%;
+   margin-top: 40%;
 }
 
 .nav li {
@@ -327,4 +328,82 @@ button {
    height: 525px;
    right: 0%;
    margin-top: 12%;
+}
+
+/* Pricing */
+.pricing {
+   display: flex;
+   justify-content: space-evenly;
+   width: 100%;
+   height: 595px;
+   margin-top: 24%;
+}
+
+.pricing-slope {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 385px;
+   height: 100%;
+   border-radius: 20px;
+   box-shadow: 
+      -12px -12px 12px 0 rgb(243, 243, 243),
+      12px 12px 12px 0 rgba(0, 0, 0, 0.03);
+}
+
+.pricing-type {
+   font-size: 32px;
+   font-weight: 100;
+   margin-top: 8.5%;
+}
+
+.pricing-seperator1 {
+   width: 70px;
+   height: 4px;
+   border-radius: 15px;
+   background: #FFE8D6;
+   margin-top: 4.5%;
+}
+
+.pricing-price {
+   font-size: 48px;
+   font-weight: bolder;
+   margin-top: 6.8%;
+}
+
+.price-month {
+   font-size: 20px;
+   font-weight: 100;
+}
+
+.pricing-seperator2 {
+   width: 300px;
+   height: 4px;
+   border-radius: 15px;
+   background: #3E4656;
+   margin-top: 4.6%;
+   margin-bottom: 4%;
+}
+
+.pricing-slope p {
+   font-size: 19px;
+   font-weight: 400;
+   line-height: 53px;
+}
+
+.locked-perk {
+   font-size: 19px;
+   font-weight: 200;
+   line-height: 53px;
+   filter: opacity(16%);
+}
+
+.pricing-button {
+   width: 220px;
+   height: 52px;
+   border: 1px #FFE8D6 solid;
+   background: #FFE8D6;
+   font-size: 17px;
+   font-weight: 100;
+   margin-top: 6%;
 }

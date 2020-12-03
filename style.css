@@ -117,7 +117,7 @@ button {
 .lp-content p {
    font-size: 17px;
    font-weight: 200;
-   margin-top: 1.8%;
+   margin-top: 3.7%;
    line-height: 33px;
 }
 
@@ -129,6 +129,30 @@ button {
    font-size: 17px;
    font-weight: 100;
    margin-top: 3.4%;
+}
+
+.socials {
+   display: flex;
+   justify-content: space-evenly;
+   width: 115px;
+   margin-left: 61.3%;
+   margin-top: 41.5%;
+   position: absolute;
+}
+
+.fb {
+   width: 13px;
+   cursor: pointer;
+}
+
+.ig {
+   width: 19px;
+   cursor: pointer;
+}
+
+.twitter {
+   width: 21px;
+   cursor: pointer;
 }
 
 /* What We Offer */
@@ -470,4 +494,142 @@ button {
    color: #fff;
    margin-top: 31.3%;
    position: absolute;
+}
+
+/* Contact */
+.contact {
+   display: grid;
+   grid-template-columns: 37% 63%;
+   grid-template-rows: 1fr;
+   width: 100%;
+   height: 527px;
+   margin-top: 15%;
+}
+
+.contact-info {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   background: #3E4656;
+}
+
+.c-address {
+   font-size: 21px;
+   font-weight: 300;
+   color: #fff;
+   margin-top: 8%;
+}
+
+.c-phone {
+   font-size: 21px;
+   font-weight: 300;
+   color: #fff;
+   margin-top: 4%;
+}
+
+.c-email {
+   font-size: 21px;
+   font-weight: 300;
+   color: #fff;
+   margin-top: 4%;
+}
+
+.c-time {
+   font-size: 21px;
+   font-weight: 300;
+   color: #fff;
+   margin-top: 4%;
+}
+
+.envelope {
+   margin-top: 13%;
+}
+
+/* Contact input */
+.contact-input {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   background: #EEF3FA;
+}
+
+.contact-input h1 {
+   font-size: 45px;
+   font-weight: 600;
+   margin-top: 6%;
+}
+
+.i-name {
+   width: 600px;
+   height: 45px;
+   font-size: 13px;
+   font-weight: 400;
+   border: none;
+   padding-left: 3%;
+   outline: none;
+   margin-top: 4.5%;
+}
+
+.i-name::placeholder {
+   color: #000;
+}
+
+.i-email {
+   width: 600px;
+   height: 45px;
+   font-size: 13px;
+   font-weight: 400;
+   border: none;
+   padding-left: 3%;
+   outline: none;
+   margin-top: 3.5%;
+}
+
+.i-email::placeholder {
+   color: #000;
+}
+
+.i-msg {
+   width: 600px;
+   height: 120px;
+   font-size: 13px;
+   font-weight: 400;
+   border: none;
+   padding-left: 3%;
+   outline: none;
+   margin-top: 3.5%;
+}
+
+.i-msg::placeholder {
+   color: #000;
+   margin-bottom: 400%;
+}
+
+.i-button {
+   width: 250px;
+   height: 50px;
+   background: #2B3038;
+   border: 1px #2B3038 solid;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 100;
+   margin-top: 4.5%;
+}
+
+/* Footer */
+.footer {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 100%;
+   height: 125px;
+}
+
+.footer h1 {
+   font-size: 25px;
+   font-weight: 600;
 }

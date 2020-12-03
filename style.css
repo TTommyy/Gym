@@ -6,11 +6,13 @@
 
 body {
    font-family: "Nunito", "sans-serif";
+   line-height: 40px;
 }
 
 button {
    cursor: pointer;
    outline: none;
+   letter-spacing: 1px;
 }
 
 /* Nav bar */
@@ -275,4 +277,54 @@ button {
    font-weight: 100;
    line-height: 38.5px;
    margin-top: 2%;
+}
+
+/* Hire a trainer */
+.trainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 830px;
+   height: 500px;
+   background: #FFE8D6;
+   margin-top: 10%;
+   padding-left: 3.8%;
+}
+
+.trainer h1 {
+   font-size: 44px;
+   letter-spacing: 2px;
+}
+
+.trainer-seperator {
+   width: 80px;
+   height: 4px;
+   background: #3E4656;
+   border-radius: 15px;
+   margin-top: 4.5%;
+}
+
+.trainer p {
+   font-size: 18px;
+   font-weight: lighter;
+   line-height: 40px;
+   margin-top: 4.2%;
+}
+
+.trainer-button {
+   width: 200px;
+   height: 55px;
+   background: #3E4656;
+   border: 1px #3E4656 solid;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 100;
+   margin-top: 4.2%;
+}
+
+.trainer-img {
+   position: absolute;
+   height: 525px;
+   right: 0%;
+   margin-top: 12%;
 }

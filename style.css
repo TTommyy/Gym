@@ -7,6 +7,7 @@
 body {
    font-family: 'Nunito', sans-serif;
    line-height: 40px;
+   overflow-x: hidden;
 }
 
 button {
@@ -650,7 +651,7 @@ button {
    width: 250px;
    height: 77%;
    background: #FFE8D6;
-   margin-left: 20%;
+   margin-left: 19.8%;
 }
 
 .a-lp-direction {
@@ -708,14 +709,15 @@ button {
 }
 
 /* Socials */
-
 .a-socials {
    display: flex;
    justify-content: space-evenly;
    width: 115px;
-   left: 90%;
-   top: 93.5%;
+   height: 50px;
+   right: 0%;
+   bottom: 0%;
    position: absolute;
+   background: #FFE8D6;
 }
 
 .a-fb {
@@ -756,7 +758,7 @@ button {
    margin-left: 9%;
    position: absolute;
    top: 126.3%;
-   font-family: "Open Sans", "sans-serif";
+   font-family: 'Open Sans', sans-serif;
 }
 
 .pip-seperator {
@@ -916,4 +918,14 @@ button {
 .access-tel p {
    font-size: 18px;
    font-weight: 400;
+}
+
+/* Contact us - About */
+.contact-a {
+   display: grid;
+   grid-template-columns: 37% 63%;
+   grid-template-rows: 1fr;
+   width: 100%;
+   height: 527px;
+   margin-top: 10%;
 }

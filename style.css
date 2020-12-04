@@ -638,3 +638,112 @@ button {
    font-size: 25px;
    font-weight: 600;
 }
+
+/* ABOUT US SECTION */
+/* Landing page */
+.a-lp {
+   width: 100%;
+   height: 100vh;
+}
+
+.a-lp-slope {
+   width: 250px;
+   height: 77%;
+   background: #FFE8D6;
+   margin-left: 20%;
+}
+
+.a-lp-direction {
+   display: flex;
+   align-items: center;
+   width: 500px;
+   height: 23%;
+   background: #3E4656;
+}
+
+.a-lp-about {
+   margin-left: 34%;
+   font-size: 55px;
+   font-weight: normal;
+   position: absolute;
+   top: 34%;
+   letter-spacing: 5px;
+}
+
+.a-lp-name {
+   font-size: 90px;
+   font-weight: bold;
+   left: 42.6%;
+   top: 63%;
+   position: absolute;
+   letter-spacing: 6px;
+}
+
+.a-lp-seperator {
+   width: 85px;
+   height: 4px;
+   border-radius: 15px;
+   background: #2B3038;
+   position: absolute;
+   top: 50%;
+   left: 43%;
+}
+
+.a-lp-direction-1 {
+   color: #fff;
+   font-size: 18px;
+   font-weight: 300;
+   margin-left: 6%;
+}
+
+.a-lp-direction-2 {
+   color: #fff;
+   font-size: 18px;
+   font-weight: 300;
+   margin-left: 3.5%;
+}
+
+.arrow {
+   margin-left: 3.5%;
+}
+
+/* Socials */
+
+.a-socials {
+   display: flex;
+   justify-content: space-evenly;
+   width: 115px;
+   left: 90%;
+   top: 93.5%;
+   position: absolute;
+}
+
+.a-fb {
+   width: 13px;
+   cursor: pointer;
+}
+
+.a-ig {
+   width: 19px;
+   cursor: pointer;
+}
+
+.a-twitter {
+   width: 21px;
+   cursor: pointer;
+}
+
+/* Pippinns */
+.pippinns {
+   display: flex;
+   width: 100%;
+   height: 448px;
+   justify-content: center;
+}
+
+.pip-rect {
+   display: flex;
+   width: 1035px;
+   height: 448px;
+   background: #EEEDED;
+}

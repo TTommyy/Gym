@@ -119,11 +119,15 @@ button {
    margin-top: 1%;
 }
 
-.lp-content p {
+.lp-text-d {
    font-size: 17px;
    font-weight: 200;
    margin-top: 3.7%;
    line-height: 33px;
+}
+
+.lp-text-m {
+   display: none;
 }
 
 .lp-button {
@@ -186,11 +190,15 @@ button {
    padding-left: 4.3%;
 }
 
-.wwo h1 {
+.wwo-slope-d {
    color: #fff;
    line-height: 100px;
    font-size: 40px;
    font-weight: lighter;
+}
+
+.wwo-slope-m {
+   display: none;
 }
 
 .wwo-text1 {
@@ -204,6 +212,10 @@ button {
    font-weight: 300;
    line-height: 37px;
    margin-top: 37px;
+}
+
+.wwo-text1-m, .wwo-text2-m {
+   display: none;
 }
 
 /* Why us */
@@ -237,11 +249,15 @@ button {
    margin-top: 6.5%;
 }
 
-.whyus-content p {
+.whyus-text-d {
    font-size: 17px;
    font-weight: 200;
    line-height: 38px;
    margin-top: 5%;
+}
+
+.whyus-text-m {
+   display: none;
 }
 
 .whyus-button {
@@ -253,6 +269,10 @@ button {
    font-weight: lighter;
    color: #fff;
    margin-top: 5.8%;
+}
+
+.whyus-text-m {
+   display: none;
 }
 
 .whyus-img {
@@ -1035,6 +1055,8 @@ button {
       width: 100%;
       height: 100vh;
       text-align: center;
+      padding-left: 5%;
+      padding-right: 5%;
    }
    
    .lp-content h4 {
@@ -1071,8 +1093,8 @@ button {
       display: flex;
       justify-content: space-evenly;
       width: 115px;
-      margin-left: 61.3%;
-      margin-top: 41.5%;
+      margin-left: 65%;
+      margin-top: 160%;
       position: absolute;
    }
    
@@ -1093,101 +1115,121 @@ button {
    
    /* What We Offer */
    .wwo {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 20% 80%;
       width: 100%;
-      height: 400px;
+      height: 475px;
    }
    
    .wwo-slope {
       display: flex;
-      width: 22.5%;
-      height: 400px;
-      background: #2B3038;
+      width: 100%;
+      height: 100%;
+      background: #3E4656;
       align-items: center;
-      padding-left: 3%;
+      justify-content: center;
    }
    
    .wwo-content {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      height: 400px;
-      width: 77.5%;
+      align-items: center;
+      justify-content: start;
+      height: 100%;
+      width: 100%;
       background: #FFE8D6;
-      padding-left: 4.3%;
+      padding-left: 6%;
+      padding-right: 6%;
+      padding-top: 10%;
    }
    
-   .wwo h1 {
+   .wwo-slope-d {
+      display: none;
+   }
+
+   .wwo-slope-m {
+      display: block;
       color: #fff;
-      line-height: 100px;
-      font-size: 40px;
+      font-size: 33px;
       font-weight: lighter;
    }
    
-   .wwo-text1 {
-      font-size: 20px;
-      font-weight: 300;
-      line-height: 37px;
+   .wwo-text1, .wwo-text2 {
+      display: none;
    }
    
-   .wwo-text2 {
-      font-size: 20px;
-      font-weight: 300;
-      line-height: 37px;
-      margin-top: 37px;
+   .wwo-text2-m, .wwo-text1-m {
+      display: block;
+      text-align: center;
+      font-size: 13px;
+      line-height: 33px;
+      margin-top: 5%;
    }
    
    /* Why us */
    .whyus {
-      display: grid;
-      grid-template-columns: 53% 47%;
-      grid-template-rows: 1fr;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
-      height: 630px;
+      height: 367px;
+      margin-top: 20%;
    }
    
    .whyus-content {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
+      text-align: center;
       width: 100%;
       height: 100%;
-      padding-left: 10.5%;
+      padding-left: 5%;
+      padding-right: 5%;
    }
    
    .whyus-content h1 {
-      font-size: 45px;
+      font-size: 33px;
       font-weight: 600;
+      letter-spacing: 2px;
    }
    
    .whyus-seperator {
-      width: 80px;
+      width: 65px;
       height: 4px;
       border-radius: 15px;
       background: #FFE8D6;
-      margin-top: 6.5%;
+      margin-top: 8%;
    }
    
-   .whyus-content p {
-      font-size: 17px;
+   .whyus-text-m {
+      display: block;
+      font-size: 12px;
       font-weight: 200;
       line-height: 38px;
-      margin-top: 5%;
+      margin-top: 6.3%;
+   }
+
+   .whyus-text-d {
+      display: none;
    }
    
    .whyus-button {
-      width: 200px;
-      height: 52px;
+      width: 175px;
+      height: 47px;
       background: #3E4656;
       border: 1px #3E4656 solid;
-      font-size: 16.4px;
+      font-size: 15px;
       font-weight: lighter;
       color: #fff;
       margin-top: 5.8%;
    }
    
    .whyus-img {
-      margin-top: 9.4%;
+      margin-top: 17%;
+      width: 340px;
+      height: 347px;
    }
    
    /* Healthy life style */
@@ -1197,6 +1239,7 @@ button {
       grid-template-rows: 1fr;
       width: 100%;
       height: 450px;
+      margin-top: 100%;
    }
    
    .healty-slope {

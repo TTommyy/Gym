@@ -362,11 +362,15 @@ button {
    margin-top: 4.5%;
 }
 
-.trainer p {
+.trainer-text-d {
    font-size: 18px;
    font-weight: lighter;
    line-height: 40px;
    margin-top: 4.2%;
+}
+
+.trainer-text-m {
+   display: none;
 }
 
 .trainer-button {
@@ -1263,11 +1267,14 @@ button {
    .healthy-content {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: start;
+      align-items: center;
       width: 100%;
       height: 100%;
       background: url(./Images/Png/healthy-img\ \(1\).png);
-      padding-left: 6.3%;
+      padding-left: 5%;
+      padding-right: 5%;
+      text-align: center;
    }
    
    .healthy-title-d {
@@ -1287,7 +1294,7 @@ button {
       color: #fff;
       font-size: 13px;
       font-weight: 100;
-      line-height: 33px;
+      line-height: 38px;
    }
    
    .healthy-text2-m {
@@ -1297,6 +1304,7 @@ button {
       font-weight: 100;
       line-height: 33px;
       margin-top: 2%;
+      line-height: 38px;
    }
 
    .healthy-text1, .healthy-text2 {
@@ -1307,77 +1315,90 @@ button {
    .trainer {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      width: 830px;
+      justify-content: start;
+      align-items: center;
+      width: 87%;
       height: 500px;
       background: #FFE8D6;
       margin-top: 10%;
-      padding-left: 3.8%;
+      padding-left: 3.7%;
+      padding-right: 3.7%;
+      text-align: center;
    }
    
    .trainer h1 {
-      font-size: 44px;
+      font-size: 31px;
       letter-spacing: 2px;
+      margin-top: 13%;
    }
    
    .trainer-seperator {
-      width: 80px;
+      width: 60px;
       height: 4px;
       background: #3E4656;
       border-radius: 15px;
-      margin-top: 4.5%;
+      margin-top: 9%;
    }
    
-   .trainer p {
-      font-size: 18px;
+   .trainer-text-m {
+      display: block;
+      font-size: 13px;
       font-weight: lighter;
       line-height: 40px;
-      margin-top: 4.2%;
+      margin-top: 6%;
+   }
+
+   .trainer-text-d {
+      display: none;
    }
    
    .trainer-button {
-      width: 200px;
-      height: 55px;
+      width: 175px;
+      height: 48px;
       background: #3E4656;
       border: 1px #3E4656 solid;
       color: #fff;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 100;
-      margin-top: 4.2%;
+      margin-top: 7.5%;
    }
    
    .trainer-img {
       position: absolute;
-      height: 525px;
+      height: 385px;
+      width: 325px;
       right: 0%;
-      margin-top: 12%;
+      margin-top: 113%;
+      object-fit: cover;
    }
    
    /* Pricing */
    .pricing {
       display: flex;
-      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
-      height: 595px;
-      margin-top: 23.4%;
+      height: 100%;
+      margin-top: 120%;
    }
    
    .pricing-slope {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 385px;
-      height: 100%;
+      width: 350px;
+      height: 585px;
       border-radius: 20px;
+      margin-bottom: 15%;
       box-shadow: 
-         -12px -12px 12px 0 rgb(243, 243, 243),
-         12px 12px 12px 0 rgba(0, 0, 0, 0.03);
+         -15px -15px 15px 50 rgb(243, 243, 243),
+         15px 15px 15px 50 rgba(0, 0, 0, 0.03);
    }
    
    .pricing-type {
       font-size: 32px;
       font-weight: 100;
-      margin-top: 8.5%;
+      margin-top: 12%;
    }
    
    .pricing-seperator1 {

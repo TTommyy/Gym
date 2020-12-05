@@ -1024,46 +1024,17 @@ button {
    }
    
    .lp-left-slope {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 22.5%;
-      height: 100vh;
-      background: #3E4656;
-      padding-left: 40px;
+      display: none;
    }
    
    .lp-content {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 77.5%;
+      align-items: center;
+      width: 100%;
       height: 100vh;
-      padding-left: 85px;
-   }
-   
-   .lp-left-title1 {
-      color: #FFE8D6;
-      font-size: 30px;
-      font-weight: 400;
-      margin-top: 50px;
-      letter-spacing: 3px;
-   }
-   
-   .lp-seperator {
-      width: 85px;
-      height: 2px;
-      background: #fff;
-      border-radius: 15px;
-      margin-top: 25px;
-   }
-   
-   .lp-left-title2 {
-      color: #FFE8D6;
-      font-size: 35px;
-      font-weight: 600;
-      margin-top: 25px;
-      letter-spacing: 3px;
+      text-align: center;
    }
    
    .lp-content h4 {
@@ -1073,15 +1044,16 @@ button {
    }
    
    .lp-content h1 {
-      font-size: 50px;
+      font-size: 34px;
       font-weight: 600;
       margin-top: 1%;
+      line-height: 43px;
    }
    
    .lp-content p {
-      font-size: 17px;
+      font-size: 12px;
       font-weight: 200;
-      margin-top: 3.7%;
+      margin-top: 8%;
       line-height: 33px;
    }
    
@@ -1092,7 +1064,7 @@ button {
       border: 1px #FFE8D6 solid;
       font-size: 17px;
       font-weight: 100;
-      margin-top: 3.4%;
+      margin-top: 9%;
    }
    
    .socials {

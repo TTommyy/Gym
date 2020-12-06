@@ -1909,48 +1909,50 @@ button {
    /* Access */
    .access {
       display: flex;
+      flex-direction: column;
       width: 100%;
-      height: 575px;
+      height: 100%;
       margin-top: 12%;
    }
 
    .access-content {
       display: flex;
       flex-direction: column;
-      width: 225px;
-      height: 330px;
-      position: absolute;
-      margin-left: 11%;
-      margin-top: 13%;
+      width: 100%;
+      height: 477px;
+      position: static;
+      margin-left: 0%;
+      margin-top: 0%;
+      background: #FFE8D6;
+      padding-left: 8%;
    }
 
    .access-img {
-      width: 675px;
-      height: 425px;
-      position: absolute;
-      margin-top: 8.5%;
-      margin-left: 40.5%;
+      width: 100%;
+      height: 385px;
+      position: static;
+      margin-top: 0%;
+      margin-left: 0%;
+      object-fit: cover;
    }
 
    .access-rect {
-      width: 755px;
-      height: 475px;
-      background: #FFE8D6;
-      margin-left: 28%;
+      display: none;
    }
 
    .access-title {
       font-size: 80px;
       font-family: 'Open Sans', sans-serif;
       position: absolute;
-      margin-left: 11%;
-      margin-top: 5%;
+      margin-left: 8.3%;
+      margin-top: 15%;
       letter-spacing: 4px;
    }
 
    .access-address h2 {
       font-size: 25px;
       font-weight: 600;
+      margin-top: 48%;
    }
 
    .access-address p {
@@ -1961,7 +1963,6 @@ button {
    .access-open h2 {
       font-size: 25px;
       font-weight: 600;
-      margin-top: 7.5%;
    }
 
    .access-open p {

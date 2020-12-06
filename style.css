@@ -2132,3 +2132,725 @@ button {
       padding-right: 4%;
    }
 }
+
+@media screen and (min-width: 376px) and (max-width: 769px) {
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+   
+   body {
+      font-family: 'Nunito', sans-serif;
+      line-height: 40px;
+      overflow-x: hidden;
+   }
+   
+   button {
+      cursor: pointer;
+      outline: none;
+      letter-spacing: 1px;
+   }
+   
+   /* Nav bar */
+   .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 80px;
+      box-shadow: rgba(0, 0, 0, 0.06) -3px 4px 4px 0px;
+      position: fixed;
+      z-index: 1;
+      background: #fff;
+   }
+   
+   .nav h1 {
+      position: absolute;
+      left: 11%;
+      font-size: 33px;
+      font-weight: 600;
+   }
+   
+   .logo {
+      margin-left: 175%;
+      margin-top: 40%;
+      width: 30px;
+      height: 37px;
+   }
+
+   .burger {
+      display: block;
+      position: relative;
+      margin-right: 6%;
+   }
+
+   .burger-line {
+      width: 25px;
+      height: 4px;
+      background: #1b1a1a;
+      border-radius: 15px;
+   }
+   
+   .burger-line::before,
+   .burger-line::after {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 4px;
+      background: #1b1a1a;
+      border-radius: 15px;
+   }
+
+   .burger-line::before {
+      transform: translateY(-11px);
+   }
+
+   .burger-line::after {
+      transform: translateY(11px);
+   }
+   
+   .nav ul {
+      display: none;
+   }
+   
+   /* Landing Page */
+   .landing-p {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+   }
+   
+   .lp-left-slope {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 24%;
+      height: 100vh;
+      background: #3E4656;
+      padding-left: 0%;
+   }
+   
+   .lp-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 77.5%;
+      height: 100vh;
+      padding-left: 85px;
+      line-height: 62px;
+   }
+   
+   .lp-left-title1 {
+      color: #FFE8D6;
+      font-size: 27px;
+      font-weight: 400;
+      margin-top: 0%;
+      letter-spacing: 3px;
+   }
+   
+   .lp-seperator {
+      width: 85px;
+      height: 2px;
+      background: #fff;
+      border-radius: 15px;
+      margin-top: 25px;
+   }
+   
+   .lp-left-title2 {
+      color: #FFE8D6;
+      font-size: 28px;
+      font-weight: 600;
+      margin-top: 25px;
+      letter-spacing: 3px;
+   }
+   
+   .lp-content h4 {
+      font-size: 14px;
+      font-weight: 200;
+      filter: opacity(50%);
+   }
+   
+   .lp-content h1 {
+      font-size: 50px;
+      font-weight: 600;
+      margin-top: 1%;
+   }
+   
+   .lp-text-d {
+      font-size: 17px;
+      font-weight: 200;
+      margin-top: 5%;
+      line-height: 43px;
+   }
+   
+   .lp-text-m {
+      display: none;
+   }
+   
+   .lp-button {
+      width: 215px;
+      height: 62px;
+      background: #FFE8D6;
+      border: 1px #FFE8D6 solid;
+      font-size: 19px;
+      font-weight: 100;
+      margin-top: 7.3%;
+   }
+   
+   .socials {
+      display: flex;
+      justify-content: space-evenly;
+      width: 115px;
+      margin-left: 61.3%;
+      margin-top: 41.5%;
+      position: absolute;
+   }
+   
+   .fb {
+      width: 13px;
+      cursor: pointer;
+   }
+   
+   .ig {
+      width: 19px;
+      cursor: pointer;
+   }
+   
+   .twitter {
+      width: 21px;
+      cursor: pointer;
+   }
+   
+   /* What We Offer */
+   .wwo {
+      display: flex;
+      width: 100%;
+      height: 400px;
+   }
+   
+   .wwo-slope {
+      display: flex;
+      width: 24%;
+      height: 400px;
+      background: #2B3038;
+      align-items: center;
+      padding-left: 3%;
+   }
+   
+   .wwo-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 400px;
+      width: 77.5%;
+      background: #FFE8D6;
+      padding-left: 3.8%;
+      padding-right: 2%;
+   }
+   
+   .wwo-slope-d {
+      color: #fff;
+      line-height: 100px;
+      font-size: 35px;
+      font-weight: lighter;
+   }
+   
+   .wwo-slope-m {
+      display: none;
+   }
+   
+   .wwo-text1-m {
+      display: block;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 37px;
+   }
+   
+   .wwo-text2-m {
+      display: block;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 37px;
+      margin-top: 37px;
+   }
+   
+   .wwo-text1, .wwo-text2 {
+      display: none;
+   }
+   
+   /* Why us */
+   .whyus {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 53% 47%;
+      width: 100%;
+      height: 100%;
+      margin-top: 7%;
+   }
+   
+   .whyus-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      padding-left: 6%;
+      padding-right: 6%;
+      text-align: center;
+   }
+   
+   .whyus-content h1 {
+      font-size: 50px;
+      font-weight: 600;
+   }
+   
+   .whyus-seperator {
+      width: 80px;
+      height: 4px;
+      border-radius: 15px;
+      background: #FFE8D6;
+      margin-top: 6.5%;
+   }
+   
+   .whyus-text-d {
+      display: none;
+   }
+   
+   .whyus-text-m {
+      display: block;
+      font-size: 17px;
+      font-weight: 200;
+      line-height: 38px;
+      margin-top: 5%;
+   }
+   
+   .whyus-button {
+      width: 200px;
+      height: 52px;
+      background: #3E4656;
+      border: 1px #3E4656 solid;
+      font-size: 16.4px;
+      font-weight: lighter;
+      color: #fff;
+      margin-top: 8%;
+   }
+   
+   .whyus-text-m {
+      display: block;
+   }
+   
+   .whyus-img {
+      margin-top: 3%;
+      width: 80%;
+      margin-left: 10%;
+   }
+   
+   /* Healthy life style */
+   .healthy {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 1fr;
+      width: 100%;
+      height: 450px;
+      margin-top: 45%;
+   }
+   
+   .healty-slope {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background: #2B3038;
+      padding-left: 15%;
+   }
+   
+   .healthy-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      background: url(./Images/Png/healthy-img\ \(1\).png);
+      padding-left: 6.3%;
+   }
+   
+   .healthy-title-d {
+      color: #FFE8D6;
+      font-size: 38px;
+      font-weight: 100;
+      line-height: 235%;
+   }
+   
+   .healthy-title-m {
+      display: none;
+   }
+   
+   .healthy-text1 {
+      display: none;
+   }
+   
+   .healthy-text2 {
+      display: none;
+   }
+   
+   .healthy-text1-m {
+      display: block;
+      color: #fff;
+      font-size: 18.5px;
+      font-weight: 100;
+      line-height: 42px;
+   }
+
+   .healthy-text2-m {
+      display: block;
+      color: #fff;
+      font-size: 18.5px;
+      font-weight: 100;
+      line-height: 42px;
+      margin-top: 8%;
+   }
+   
+   /* Hire a trainer */
+   .trainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: 500px;
+      background: #FFE8D6;
+      margin-top: 10%;
+      padding-left: 5%;
+      padding-right: 5%;
+   }
+   
+   .trainer h1 {
+      font-size: 50px;
+      letter-spacing: 2px;
+   }
+   
+   .trainer-seperator {
+      width: 80px;
+      height: 4px;
+      background: #3E4656;
+      border-radius: 15px;
+      margin-top: 6%;
+   }
+   
+   .trainer-text-d {
+      display: none;
+   }
+   
+   .trainer-text-m {
+      display: block;
+      font-size: 18px;
+      font-weight: lighter;
+      line-height: 40px;
+      margin-top: 4.2%;
+   }
+   
+   .trainer-button {
+      width: 200px;
+      height: 55px;
+      background: #3E4656;
+      border: 1px #3E4656 solid;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 100;
+      margin-top: 4.2%;
+   }
+   
+   .trainer-img {
+      position: absolute;
+      height: 525px;
+      width: 100%;
+      left: 0%;
+      margin-top: 66%;
+      object-fit: cover;
+   }
+   
+   /* Pricing */
+   .pricing {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      margin-top: 90%;
+   }
+   
+   .pricing-slope {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 75%;
+      height: 785px;
+      border-radius: 20px;
+      box-shadow: 
+         -12px -12px 12px 0 rgb(243, 243, 243),
+         12px 12px 12px 0 rgba(0, 0, 0, 0.03);
+      margin-top: 9%;
+   }
+   
+   .pricing-type {
+      font-size: 45px;
+      font-weight: 100;
+      margin-top: 8.5%;
+   }
+   
+   .pricing-seperator1 {
+      width: 70px;
+      height: 4px;
+      border-radius: 15px;
+      background: #FFE8D6;
+      margin-top: 6%;
+   }
+   
+   .pricing-price {
+      font-size: 60px;
+      font-weight: bolder;
+      margin-top: 8%;
+   }
+   
+   .price-month {
+      font-size: 20px;
+      font-weight: 100;
+   }
+   
+   .pricing-seperator2 {
+      width: 300px;
+      height: 4px;
+      border-radius: 15px;
+      background: #3E4656;
+      margin-top: 7%;
+      margin-bottom: 6%;
+   }
+   
+   .pricing-slope p {
+      font-size: 23px;
+      font-weight: 400;
+      line-height: 62px;
+   }
+   
+   .locked-perk {
+      font-size: 23px;
+      font-weight: 200;
+      line-height: 53px;
+      filter: opacity(16%);
+   }
+   
+   .pricing-button {
+      width: 295px;
+      height: 69px;
+      border: 1px #FFE8D6 solid;
+      background: #FFE8D6;
+      font-size: 22px;
+      font-weight: 100;
+      margin-top: 6%;
+   }
+   
+   /* Testimonials */
+   .test {
+      display: flex;
+      width: 100%;
+      height: 425px;
+      margin-top: 12%;
+   }
+   
+   .test-content {
+      display: flex;
+      flex-direction: column;
+      width: 88%;
+      height: 560px;
+      background: #FFE8D6;
+      margin-left: 0%;
+      padding-left: 8%;
+      padding-right: 4%;
+   }
+   
+   .test-right {
+      height: 560px;
+      width: 12%;
+      background: #3E4656;
+   }
+   
+   .test-content h1 {
+      font-size: 52px;
+      font-weight: 600;
+      position: static;
+      left: 6%;
+      margin-top: 10%;
+   }
+   
+   .test-seperator {
+      width: 70px;
+      height: 4px;
+      border-radius: 15px;
+      background: #3E4656;
+      margin-top: 8%;
+   }
+   
+   .test-text-d {
+      display: none;
+   }
+   
+   .test-text-m {
+      display: block;
+      font-size: 19px;
+      font-weight: 200;
+      margin-top: 6%;
+      line-height: 45px;
+   }
+   
+   .test-content h2 {
+      font-size: 19px;
+      font-weight: 600;
+      margin-top: 3%;
+   }
+   
+   .test-button {
+      width: 200px;
+      height: 60px;
+      background: #3E4656;
+      border: 1px #3E4656 solid;
+      font-size: 18px;
+      font-weight: 100;
+      color: #fff;
+      margin-top: 6%;
+      position: static;
+   }
+   
+   /* Contact */
+   .contact {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 50% 50%;
+      width: 100%;
+      height: 1350px;
+      margin-top: 45%;
+   }
+   
+   .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background: #3E4656;
+   }
+   
+   .c-address {
+      font-size: 21px;
+      font-weight: 300;
+      color: #fff;
+      margin-top: 11%;
+   }
+   
+   .c-phone {
+      font-size: 25px;
+      font-weight: 300;
+      color: #fff;
+      margin-top: 6%;
+   }
+   
+   .c-email {
+      font-size: 25px;
+      font-weight: 300;
+      color: #fff;
+      margin-top: 6%;
+   }
+   
+   .c-time {
+      font-size: 25px;
+      font-weight: 300;
+      color: #fff;
+      margin-top: 6%;
+   }
+   
+   .envelope {
+      margin-top: 10%;
+   }
+   
+   /* Contact input */
+   .contact-input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background: #EEF3FA;
+   }
+   
+   .contact-input h1 {
+      font-size: 38px;
+      font-weight: 600;
+      margin-top: 13%;
+   }
+   
+   .i-name {
+      width: 80%;
+      height: 45px;
+      font-size: 13px;
+      font-weight: 400;
+      border: none;
+      padding-left: 3%;
+      outline: none;
+      margin-top: 12%;
+      padding-right: 2.5%;
+   }
+   
+   .i-name::placeholder {
+      color: #000;
+   }
+   
+   .i-email {
+      width: 80%;
+      height: 45px;
+      font-size: 13px;
+      font-weight: 400;
+      border: none;
+      padding-left: 3%;
+      outline: none;
+      margin-top: 7%;
+      padding-right: 2.5%;
+   }
+   
+   .i-email::placeholder {
+      color: #000;
+   }
+   
+   .i-msg {
+      width: 80%;
+      height: 120px;
+      font-size: 14.3px;
+      font-weight: 400;
+      border: none;
+      padding-left: 3%;
+      outline: none;
+      margin-top: 7%;
+      resize: none;
+      font-family: "Nunito";
+      padding-top: 1.2%;
+      padding-right: 2.5%;
+   }
+   
+   .i-msg::placeholder {
+      color: #000;
+   }
+   
+   .i-button {
+      width: 250px;
+      height: 50px;
+      background: #2B3038;
+      border: 1px #2B3038 solid;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 100;
+      margin-top: 11.2%;
+   }
+}

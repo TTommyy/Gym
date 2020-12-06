@@ -748,6 +748,10 @@ button {
    margin-left: 3.5%;
 }
 
+.scroll {
+   display: none;
+}
+
 /* Socials */
 .a-socials {
    display: flex;
@@ -810,7 +814,7 @@ button {
    margin-left: 3.5%;
 }
 
-.pip-text1 {
+.pip-text1-d {
    margin-left: 11.5%;
    margin-top: 3.4%;
    font-size: 20px;
@@ -818,7 +822,7 @@ button {
    letter-spacing: 1.3px;
 }
 
-.pip-text2 {
+.pip-text2-d {
    margin-left: 11.5%;
    margin-top: 2.3%;
    font-size: 20px;
@@ -830,6 +834,10 @@ button {
    position: absolute;
    left: 60%;
    margin-top: 12%;
+}
+
+.pip-text1-m, .pip-text2-m {
+   display: none;
 }
 
 /* Staff */
@@ -981,7 +989,7 @@ button {
    
    body {
       font-family: 'Nunito', sans-serif;
-      line-height: 33px;
+      line-height: 33px
    }
    
    button {
@@ -1677,5 +1685,308 @@ button {
    .footer h1 {
       font-size: 20px;
       font-weight: 600;
+   }
+
+   /* ABOUT US - MOBILE */
+   /* Landing page */
+   .a-lp {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+   }
+
+   .a-lp-slope {
+      width: 62px;
+      height: 100vh;
+      background: #FFE8D6;
+      margin-left: 5%;
+   }
+
+   .a-lp-direction {
+      display: none;
+      align-items: center;
+      width: 500px;
+      height: 23%;
+      background: #3E4656;
+   }
+
+   .a-lp-about {
+      margin-left: 31%;
+      font-size: 40px;
+      font-weight: normal;
+      position: absolute;
+      top: 37%;
+      letter-spacing: 5px;
+   }
+
+   .a-lp-name {
+      font-size: 61px;
+      font-weight: bold;
+      left: 8%;
+      top: 60%;
+      position: absolute;
+      letter-spacing: 6px;
+   }
+
+   .a-lp-seperator {
+      width: 65px;
+      height: 4px;
+      border-radius: 15px;
+      background: #2B3038;
+      position: absolute;
+      top: 50%;
+      left: 42%;
+   }
+
+   .a-lp-direction-1 {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 300;
+      margin-left: 6%;
+   }
+
+   .a-lp-direction-2 {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 300;
+      margin-left: 3.5%;
+   }
+
+   .arrow {
+      margin-left: 3.5%;
+   }
+
+   .a-lp-connector {
+      width: 5.05em;
+      height: 62px;
+      background: #3E4656;
+      position: absolute;
+      top: 100%;
+   }
+
+   .scroll {
+      display: block;
+      position: absolute;
+      top: 82%;
+      left: 45.5%;
+   }
+
+   /* Socials */
+   .a-socials {
+      display: none;
+   }
+
+   /* Pippinns */
+   .pippinns {
+      display: flex;
+      width: 100%;
+      height: 675px;
+      justify-content: center;
+      margin-top: 68%;
+   }
+
+   .pip-rect {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: 448px;
+      background: #EEEDED;
+      padding-left: 8%;
+      padding-right: 8%;
+   }
+
+   .pip-rect h1 {
+      font-size: 70px;
+      font-weight: bolder;
+      margin-left: 0%;
+      position: absolute;
+      top: 134%;
+      font-family: 'Open Sans', sans-serif;
+   }
+
+   .pip-seperator {
+      width: 160px;
+      height: 3px;
+      border-radius: 15px;
+      background: #2B3038;
+      margin-top: 18%;
+      left: 0%;
+      margin-left: 0%;
+      position: absolute;
+   }
+
+   .pip-text1-m {
+      display: block;
+      margin-left: 0%;
+      margin-top: 36%;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 1.3px;
+   }
+
+   .pip-text2-m {
+      display: block;
+      margin-left: 0%;
+      margin-top: 8%;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 1.3px;
+   }
+
+   .pip-img {
+      position: absolute;
+      left: 0;
+      margin-top: 102%;
+      width: 324px;
+      height: 275px;
+   }
+
+   .pip-text2-d, .pip-text1-d {
+      display: none;
+   }
+
+   /* Staff */
+   .staff {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      margin-top: 17%;
+   }
+
+   .staff-slope {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 76% 24%;
+      width: 350px;
+      height: 522px;
+      margin-top: 20%;
+   }
+
+   .staff-1 {
+      width: 100%;
+      height: 100%;
+   }
+
+   .staff-2 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+
+   .staff-3 {
+      width: 100%;
+      height: 100%;
+   }
+
+   .staff-info {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      background: #2B3038;
+   }
+
+   .staff-info h1 {
+      color: #fff;
+      font-size: 30px;
+      font-weight: 400;
+   }
+
+   .staff-info h2 {
+      color: #FFE8D6;
+      font-size: 18px;
+      font-weight: 400;
+      margin-top: 2%;
+   }
+
+   /* Access */
+   .access {
+      display: flex;
+      width: 100%;
+      height: 575px;
+      margin-top: 12%;
+   }
+
+   .access-content {
+      display: flex;
+      flex-direction: column;
+      width: 225px;
+      height: 330px;
+      position: absolute;
+      margin-left: 11%;
+      margin-top: 13%;
+   }
+
+   .access-img {
+      width: 675px;
+      height: 425px;
+      position: absolute;
+      margin-top: 8.5%;
+      margin-left: 40.5%;
+   }
+
+   .access-rect {
+      width: 755px;
+      height: 475px;
+      background: #FFE8D6;
+      margin-left: 28%;
+   }
+
+   .access-title {
+      font-size: 80px;
+      font-family: 'Open Sans', sans-serif;
+      position: absolute;
+      margin-left: 11%;
+      margin-top: 5%;
+      letter-spacing: 4px;
+   }
+
+   .access-address h2 {
+      font-size: 25px;
+      font-weight: 600;
+   }
+
+   .access-address p {
+      font-size: 18px;
+      font-weight: 400;
+   }
+
+   .access-open h2 {
+      font-size: 25px;
+      font-weight: 600;
+      margin-top: 7.5%;
+   }
+
+   .access-open p {
+      font-size: 18px;
+      font-weight: 400;
+   }
+
+   .access-tel h2 {
+      font-size: 25px;
+      font-weight: 600;
+      margin-top: 7.5%;
+   }
+
+   .access-tel p {
+      font-size: 18px;
+      font-weight: 400;
+   }
+
+   /* Contact us - About */
+   .contact-a {
+      display: grid;
+      grid-template-columns: 37% 63%;
+      grid-template-rows: 1fr;
+      width: 100%;
+      height: 527px;
+      margin-top: 10%;
    }
 }

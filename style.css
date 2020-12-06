@@ -2303,8 +2303,8 @@ button {
       display: flex;
       justify-content: space-evenly;
       width: 115px;
-      margin-left: 61.3%;
-      margin-top: 41.5%;
+      margin-left: 49%;
+      margin-top: 125%;
       position: absolute;
    }
    
@@ -2787,20 +2787,20 @@ button {
    }
    
    .contact-input h1 {
-      font-size: 38px;
+      font-size: 57px;
       font-weight: 600;
-      margin-top: 13%;
+      margin-top: 10%;
    }
    
    .i-name {
       width: 80%;
-      height: 45px;
-      font-size: 13px;
+      height: 60px;
+      font-size: 18px;
       font-weight: 400;
       border: none;
-      padding-left: 3%;
+      padding-left: 6%;
       outline: none;
-      margin-top: 12%;
+      margin-top: 8.7%;
       padding-right: 2.5%;
    }
    
@@ -2810,13 +2810,13 @@ button {
    
    .i-email {
       width: 80%;
-      height: 45px;
-      font-size: 13px;
+      height: 60px;
+      font-size: 18px;
       font-weight: 400;
       border: none;
       padding-left: 3%;
       outline: none;
-      margin-top: 7%;
+      margin-top: 5%;
       padding-right: 2.5%;
    }
    
@@ -2827,12 +2827,12 @@ button {
    .i-msg {
       width: 80%;
       height: 120px;
-      font-size: 14.3px;
+      font-size: 18px;
       font-weight: 400;
       border: none;
       padding-left: 3%;
       outline: none;
-      margin-top: 7%;
+      margin-top: 5%;
       resize: none;
       font-family: "Nunito";
       padding-top: 1.2%;
@@ -2844,13 +2844,25 @@ button {
    }
    
    .i-button {
-      width: 250px;
-      height: 50px;
+      width: 300px;
+      height: 62px;
       background: #2B3038;
       border: 1px #2B3038 solid;
       color: #fff;
       font-size: 18px;
       font-weight: 100;
-      margin-top: 11.2%;
+      margin-top: 8%;
+   }
+
+   /* Footer */
+   .footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      height: 350px;
+      padding-left: 4%;
+      padding-right: 4%;
    }
 }

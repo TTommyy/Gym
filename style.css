@@ -48,9 +48,11 @@ button {
    font-weight: normal;
 }
 
-.nav a {
+.link-nav {
    text-decoration: none;
    color: #000;
+   position: relative;
+   padding-bottom: 4px;
 }
 
 .burger {
@@ -59,6 +61,23 @@ button {
 
 .menu-burger {
    display: none;
+}
+
+.link-nav::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   background: #000;
+   transform-origin: left;
+   transition: ease 400ms;
+   transform: scale(0);
+   bottom: 0;
+   left: 0;
+}
+
+.link-nav:hover::after {
+   transform: scale(1);
 }
 
 /* Landing Page */
@@ -1034,6 +1053,7 @@ button {
       position: relative;
       margin-right: 6%;
       z-index: 30;
+      cursor: pointer;
    }
 
    .burger-line {
@@ -1051,6 +1071,7 @@ button {
       height: 4px;
       background: #1b1a1a;
       border-radius: 15px;
+      transition: ease 300ms;
    }
 
    .burger-line::before {
@@ -1071,20 +1092,24 @@ button {
       background: #3E4656;
       position: fixed;
       z-index: 2;
-      transform: translateX(-100%);
-      transition: ease 500ms;
+      right: -100%;
+      transition: 450ms;
    }
 
-   .open-menu {
-      left: 0;
+   .openM {
+      right: 0;
    }
 
-   .open-burger::after {
+   .open .burger-line::after {
+      transform: rotate(-45deg);
+   }
+
+   .open .burger-line::before {
       transform: rotate(45deg);
    }
 
-   .open-burger::before {
-      transform: rotate(-45deg);
+   .open .burger-line {
+      background: none;
    }
 
    .menu-burger li {
@@ -1096,10 +1121,29 @@ button {
    .menu-burger a {
       text-decoration: none;
       color: #fff;
+      position: relative;
+      padding-bottom: 4px;
    }
    
    .nav ul {
       display: none;
+   }
+
+   .nav-link::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      transform-origin: left;
+      transition: ease 400ms;
+      transform: scale(0);
+      bottom: 0;
+      left: 0;
+   }
+
+   .nav-link:hover::after {
+      transform: scale(1);
    }
    
    /* Landing Page */

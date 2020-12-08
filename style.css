@@ -167,7 +167,7 @@ button {
    display: flex;
    justify-content: space-evenly;
    width: 115px;
-   left: 88%;
+   left: 90.5%;
    top: 93.5%;
    position: absolute;
 }
@@ -177,14 +177,29 @@ button {
    cursor: pointer;
 }
 
+.fb:hover {
+   opacity: 75%;
+   transition: ease 400ms;
+}
+
 .ig {
    width: 19px;
    cursor: pointer;
 }
 
+.ig:hover {
+   opacity: 75%;
+   transition: ease 400ms;
+}
+
 .twitter {
    width: 21px;
    cursor: pointer;
+}
+
+.twitter:hover {
+   opacity: 75%;
+   transition: ease 400ms;
 }
 
 /* What We Offer */

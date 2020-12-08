@@ -101,3 +101,59 @@ trainerButton.addEventListener("mouseout", () => {
    trainerButton.style.transform = "translateY(4px)";
    trainerButton.style.transition = "ease 500ms";
 });
+
+// Pricing section
+let pricing = gsap.timeline({
+   scrollTrigger: {
+      trigger: ".section-7",
+      start: "center bottom"
+   }
+});
+
+pricing.from(".pricing-slope", {y: "50%", duration: 1, opacity: 0, stagger: 0.40});
+
+// Testimonial section
+let test = gsap.timeline({
+   scrollTrigger: {
+      trigger: ".section-8",
+      start: "center bottom"
+   }
+});
+
+test.from(".test-content h1, .test-content h2, .test-text-d, .test-button", {y: "50%", duration: 1, opacity: 0, stagger: 0.25})
+test.from(".test-seperator", {y: "100%", duration: 1, opacity: 0, stagger: 0.25}, "-=1")
+
+const testButton = document.querySelector(".test-button");
+
+testButton.addEventListener("mouseover", () => {
+   testButton.style.transform = "translateY(-4px)";
+   testButton.style.transition = "ease 500ms";
+});
+
+testButton.addEventListener("mouseout", () => {
+   testButton.style.transform = "translateY(4px)";
+   testButton.style.transition = "ease 500ms";
+});
+
+// Contact section
+let contact = gsap.timeline({
+   scrollTrigger: {
+      trigger: ".section-9",
+      start: "center bottom"
+   }
+});
+
+contact.from(".contact-info", {x: "-50%", duration: 1, opacity: 0});
+contact.from(".contact-input", {x: "50%", duration: 1, opacity: 0}, "-=1");
+contact.from(".envelope, .c-address, .c-phone, .c-email, .c-time", {y: "50%", duration: 1, opacity: 0, stagger: 0.25});
+contact.from(".i-name, .i-email, .i-msg, .i-button, .contact-input h1", {y: "50%", duration: 1, opacity: 0, stagger: 0.25}, "-=0.5");
+
+// Footer
+let footer = gsap.timeline({
+   scrollTrigger: {
+      trigger: ".section-10",
+      start: "center bottom"
+   }
+});
+
+footer.from(".footer h1", {y: "75%" ,opacity: 0, duration: 1, stagger: 0.25});

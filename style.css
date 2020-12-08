@@ -507,6 +507,11 @@ button {
    margin-top: 6%;
 }
 
+.pricing-button:hover {
+   transform: scale(1.03);
+   transition: ease 400ms;
+}
+
 /* Testimonials */
 .test {
    display: flex;

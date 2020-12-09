@@ -822,6 +822,21 @@ button {
    cursor: pointer;
 }
 
+.a-twitter:hover {
+   opacity: 75%;
+   transition: ease 400ms;
+}
+
+.a-fb:hover {
+   opacity: 75%;
+   transition: ease 400ms;
+}
+
+.a-ig:hover {
+   opacity: 75%;
+   transition: ease 400ms;
+}
+
 /* Pippinns */
 .pippinns {
    display: flex;
@@ -978,6 +993,7 @@ button {
    margin-left: 11%;
    margin-top: 5%;
    letter-spacing: 4px;
+   z-index: 1;
 }
 
 .access-address h2 {

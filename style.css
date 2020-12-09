@@ -1223,8 +1223,8 @@ button {
       display: flex;
       justify-content: space-evenly;
       width: 115px;
-      margin-left: 65%;
-      margin-top: 160%;
+      left: 67%;
+      margin-top: 0%;
       position: absolute;
    }
    

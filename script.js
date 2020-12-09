@@ -7,6 +7,8 @@ burger.addEventListener("click", () => {
    burgerM.classList.toggle("openM");
 });
 
+// Scroll animation for pricing, contact
+
 // Animation for home - desktop
 const tl = gsap.timeline({defaults: {ease: "power1.out"}});
 
@@ -106,7 +108,7 @@ trainerButton.addEventListener("mouseout", () => {
 let pricing = gsap.timeline({
    scrollTrigger: {
       trigger: ".section-7",
-      start: "center bottom"
+      start: "top bottom"
    }
 });
 
@@ -145,8 +147,8 @@ let contact = gsap.timeline({
 
 contact.from(".contact-info", {x: "-50%", duration: 1, opacity: 0});
 contact.from(".contact-input", {x: "50%", duration: 1, opacity: 0}, "-=1");
-contact.from(".envelope, .c-address, .c-phone, .c-email, .c-time", {y: "50%", duration: 1, opacity: 0, stagger: 0.25});
-contact.from(".i-name, .i-email, .i-msg, .i-button, .contact-input h1", {y: "50%", duration: 1, opacity: 0, stagger: 0.25}, "-=0.5");
+contact.from(".envelope, .c-address, .c-phone, .c-email, .c-time", {y: "50%", duration: 1, opacity: 0, stagger: 0.20});
+contact.from(".i-name, .i-email, .i-msg, .i-button, .contact-input h1", {y: "50%", duration: 1, opacity: 0, stagger: 0.20}, "-=0.5");
 
 // Footer
 let footer = gsap.timeline({
@@ -156,4 +158,4 @@ let footer = gsap.timeline({
    }
 });
 
-footer.from(".footer h1", {y: "75%" ,opacity: 0, duration: 1, stagger: 0.25});
+footer.from(".footer h1", {y: "75%", opacity: 0, duration: 1, stagger: 0.25});
